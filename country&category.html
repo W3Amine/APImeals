@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+    <style>
+header {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/465/468/1016/walnut-bow-plates-pepper-wallpaper-preview.jpg");
+ padding: 120px 20px;
+}
+
+.modal {
+  --bs-modal-width: 60% !important;
+}
+
+    </style>
+
+
+</head>
+<body>
+
+
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary  fixed-top bg-dark" data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand" href="/index.html">EatTheMeat</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Search for Spices</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/country&Category.html">Country And Category</a>
+                  </li>
+                  
+            
+            </ul>
+
+            <form action="/index.html" class="d-flex mx-2" role="search">
+                <div class="input-group ">
+                    <input type="text" class="form-control" name="search" placeholder="Search" aria-label="Search" aria-describedby="Search">
+                    <button class="btn btn-success " type="submit" id="Search">Search</button>
+                  </div>
+                
+            </form>
+
+
+            <form action="/country&category.html" method="get" class="mx-2">
+
+
+                <div class="input-group">
+                    <select name="category" class="form-select">
+                      <option selected>Choose a Category</option>
+                      <option value="meat">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+
+                    <select name="country" class="form-select">
+                        <option selected>Choose a country</option>
+                        <option value="one">One</option>
+                        <option value="two">Two</option>
+                        <option value="three">Three</option>
+                      </select>
+
+                    <button class="btn btn-success" type="submit">Search</button>
+                  </div>
+            </form>
+
+
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="container-fluid  " > 
+
+    
+
+
+
+
+
+
+
+    <form action="/country&category.html" method="get" class="mx-2">
+
+
+        <div class="input-group w-50 mb-3 mx-auto ">
+            <select  name="category" class="form-select  py-3 " id="" >
+              <option selected>Choose a Category</option>
+              <option value="meat">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+
+            <select name="country" class="form-select  py-3" id="" >
+                <option selected>Choose a country</option>
+                <option value="one">One</option>
+                <option value="two">Two</option>
+                <option value="three">Three</option>
+              </select>
+
+            <button class="btn btn-success  px-4" type="submit">Search</button>
+          </div>
+    </form>
+
+
+
+
+</header>
+
+
+
+
+
+<section class="container">
+
+
+
+<div  id="cardsFrame"  class="d-flex justify-content-around  flex-wrap mt-5">  
+
+    <div class="card  mx-2  " >
+        <img class="card-img-top" src="https://i.f1g.fr/media/madame/orig/sites/default/files/img/2017/11/la-frite-est-elle-belge-ou-francaise-.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#DetailsModal" >More Details</a>
+        </div>
+      </div>
+
+      <div class="card  mx-2  " >
+        <img class="card-img-top" src="https://i.f1g.fr/media/madame/orig/sites/default/files/img/2017/11/la-frite-est-elle-belge-ou-francaise-.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#DetailsModal"  >More Details</a>
+        </div>
+      </div>
+
+
+
+      <div class="card  mx-2  " >
+        <img class="card-img-top" src="https://i.f1g.fr/media/madame/orig/sites/default/files/img/2017/11/la-frite-est-elle-belge-ou-francaise-.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#DetailsModal" >Go somewhere</a>
+        </div>
+      </div>
+
+
+      
+
+
+
+
+    </div>
+
+
+
+
+
+<script>
+  function me(x){
+console.log(x)
+  }
+</script>
+
+        <ul class="pagination flex-wrap justify-content-center     mt-5 ">
+          <li class="page-item ">
+            <a class="page-link">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link"  href="#">1</a></li>
+          <li class="page-item active">
+
+            <a class="page-link" href="#">2</a>
+
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="DetailsModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="modalTitle">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+
+            <div class="row">
+
+                <div class="col-md-6">
+<img id="strMealThumb" class="img-fluid mt-md-4" src="https://i.f1g.fr/media/madame/orig/sites/default/files/img/2017/11/la-frite-est-elle-belge-ou-francaise-.jpg" alt="Spices">
+
+<iframe id="strYoutube" class="mx-auto w-100 h-50  mt-2" src="https://www.youtube.com/embed/kXKQdWFW1zo" title="shanks stop the war theme" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                </div>
+
+
+                <div class="col-md-6">
+
+                    
+
+                    <h4>Instructions :</h4>
+                    <div id="strInstructions" >  "Preheat oven to 350° F. Spray a 9x13-inch baking pan with non-stick spray.\r\nCombine soy sauce, ½ cup water, brown sugar, ginger and garlic in a small saucepan and cover. Bring to a boil over medium heat. Remove lid and cook for one minute once boiling.\r\nMeanwhile, stir together the corn starch and 2 tablespoons of water in a separate dish until smooth. Once sauce is boiling, add mixture to the saucepan and stir to combine. Cook until the sauce starts to thicken then remove from heat.\r\nPlace the chicken breasts in the prepared pan. Pour one cup of the sauce over top of chicken. Place chicken in oven and bake 35 minutes or until cooked through. Remove from oven and shred chicken in the dish using two forks.\r\n*Meanwhile, steam or cook the vegetables according to package directions.\r\nAdd the cooked vegetables and rice to the casserole dish with the chicken. Add most of the remaining sauce, reserving a bit to drizzle over the top when serving. Gently toss everything together in the casserole dish until combined. Return to oven and cook 15 minutes. Remove from oven and let stand 5 minutes before serving. Drizzle each serving with remaining sauce. Enjoy!" 
+
+                    </div>
+
+                    <h4>Area :</h4>
+
+                    <p id="strArea"> strArea   </p>
+
+                    <h4>Category :</h4>
+
+                    <p id="strCategory" ></p> strCategory </p>
+                    
+                <h4>tags :</h4>
+                <p id="strTags"> strTags;strTags;strTags </p>
+
+
+<div class="row"> 
+
+    <div class="col-md-6">
+
+                <h4>Ingredients :</h4>
+                <ol id="strIngredients">
+                    <li  > water </li>
+                    <li  > brown sugar </li>
+                    <li  > cornstarch </li>
+                    <li  > chicken breasts </li>
+                </ol>
+            </div>
+                <div class="col-md-6">
+
+                <h4>Measures :</h4>
+                <ol id="strMeasures">
+                    <li  > 3/4 cup </li>
+                    <li  > 1/2 cup </li>
+                    <li  > 1/2 teaspoon </li>
+                    <li  > 4 Tablespoons </li>
+                </ol>
+            </div>
+
+
+            </div>
+                
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+<script src="/jquery.nicescroll.min.js"></script>
+<script src="/scripts.js"></script>
+
+</body>
+</html>
